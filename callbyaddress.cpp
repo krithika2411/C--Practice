@@ -12,7 +12,7 @@ int main () {
     #endif
     int num=10;
     doSomething(num);
-    cout<<num<<endl;
+    cout<<"hi"<<num<<endl;
 
  return 0;
 }
