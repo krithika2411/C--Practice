@@ -1,4 +1,5 @@
-#ifndef ONLINE_JUDGE 
-        freopen("input.txt", "r", stdin);
-       freopen("output.txt", "w", stdout);
-    #endif
+    for ( int i = 0; i < n; i++)
+      // {
+      //    cout<<arr[i]<<" ";
+      // }
+      // cout<<"\n";
