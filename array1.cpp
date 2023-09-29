@@ -1,12 +1,29 @@
-#include <bits/stdc++.h>
-using namespace std ;
-int main () {
-    #ifndef ONLINE_JUDGE 
-        freopen("input.txt", "r", stdin);
-       freopen("output.txt", "w", stdout);
-    #endif
- int arr[5];
-cin>>arr[0]>>arr[1]>>arr[2]>>arr[3]>>arr[4]>>arr[5];
-cout<<arr[4]<<"\n"<<arr[0];
-return 0 ;
+#include<bits/stdc++.h>
+using namespace std;
+
+long long int	 fibonacci(long long int	 N){
+   
+   // Base Condition.
+   if(N <= 1)
+   {
+       return N;
+   }
+
+   // Problem broken down into 2 functional calls
+   // and their results combined and returned.
+   long long int	 last = fibonacci(N-1);
+long long int	 slast = fibonacci(N-2);
+   
+   return last + slast;
+
+}
+
+int main(){
+  
+  // Here, let’s take the value of N to be 4.
+ long long int	 N ;
+  cin>>N;
+  cout<<fibonacci(N)<<endl;
+  return 0;
+
 }
